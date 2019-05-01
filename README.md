@@ -35,7 +35,7 @@ Git is a stream of snapshots (commits)
 1. Create Repository in GitHub. Either under your organizations or your personal account. Click on the "New" button
 ![alt text](images/NewRepository.JPG "New Repo")
 
-1. Add a descriptive lowercase-with-hyphens name, do not initialize a README this time.
+1. Add a descriptive `lowercase-with-hyphens` name, do not initialize a README this time and click on Create.
 
 1. **Scenario 1** - Repository already exists in GitHub and you have code already in your local
 
@@ -51,10 +51,18 @@ Git is a stream of snapshots (commits)
     $git remote add origin <<repository-url>>
     # downloads commits, files and refs from remote repository into our local
     $git fetch origin
- 
+    # add your all your new and modified (".") changes to the staging area
+    $git add .
+    # push local changes to the remote specified branch
+    $git push origin develop
     ```
  1. **Scenario 2** - Repository already exists and your local environment is empty (Recommended)
+    (Via HTTPS)
+    ```bash
+    $cd <<project-parent-folder>>
+    $git clone https://github.com/cortlandpartners/<<repository-name>>.git
 
+    ```
     
 
     
