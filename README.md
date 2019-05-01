@@ -30,39 +30,50 @@ Git is a stream of snapshots (commits)
 
 ### Step-by-step guide
 
-1. Install Git in your local development environment (laptop/desktop)
+1. Sign up for an account in GitHub or receive an organization invitation
+
+1. [Download](https://git-scm.com/downloads) and install Git in your local development environment (laptop/desktop)
 
 1. Create Repository in GitHub. Either under your organizations or your personal account. Click on the "New" button
 ![alt text](images/NewRepository.JPG "New Repo")
 
 1. Add a descriptive `lowercase-with-hyphens` name, do not initialize a README this time and click on Create.
 
-1. **Scenario 1** - Repository already exists in GitHub and you have code already in your local
-
-    - **Terminal** -  Replace <<repository-url>> with your GitHub repo URL. i.e. https://github.com/cortlandpartners/hello-world
+1. It is recommended to introduce our user and e-mail to every repository
+    ```bash
+    $git config --global user.name "<your_user_name_here>"
+    $git config --global user.email "<your@email.com>"
+    ```
+1. Getting started (Clone or fetch)
+    1. **Initialize and fetch** - Repository already exists in GitHub and you have code already in your local. 
     
-    ```bash
-    $cd <<project-folder>>
-    # creates the "develop" branch
-    $git checkout -b develop
-    # initializes .git repo in our local environment
-    $git init
-    # creates a remote called "origin" linked to "GitHub repo's URL"
-    $git remote add origin <<repository-url>>
-    # downloads commits, files and refs from remote repository into our local
-    $git fetch origin
-    # add your all your new and modified (".") changes to the staging area
-    $git add .
-    # push local changes to the remote specified branch
-    $git push origin develop
-    ```
- 1. **Scenario 2** - Repository already exists and your local environment is empty (Recommended)
-    (Via HTTPS)
-    ```bash
-    $cd <<project-parent-folder>>
-    $git clone https://github.com/cortlandpartners/<<repository-name>>.git
-
-    ```
+        Note: Replace <<repository-url>> with your GitHub repo URL. i.e. https://github.com/cortlandpartners/hello-world
+      
+        ```bash
+        $cd <<project-folder>>
+        # creates the "develop" branch
+        $git checkout -b develop
+        # initializes .git repo in our local environment
+        $git init
+        # creates a remote called "origin" linked to "GitHub repo's URL"
+        $git remote add origin <<repository-url>>
+        # downloads commits, files and refs from remote repository into our local
+        $git fetch origin
+        # check the status of my local working tree repo
+        $git status
+        # add your all your new and modified (".") changes to the staging area
+        $git add .
+        # push local changes to the remote specified branch
+        $git push origin develop
+        ```
+        
+     1. **Clone repository** - Repository already exists and your local environment is empty (Via HTTPS)
+        ```bash
+        $cd <<project-parent-folder>>
+        $git clone https://github.com/cortlandpartners/<<repository-name>>.git
+        ```
+ 1. So far we have used the big git commands, don't forget to also use `git help`. It is seriously very helpful if you're starting out.
+  
     
 
     
