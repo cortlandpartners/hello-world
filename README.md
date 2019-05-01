@@ -32,13 +32,30 @@ Git is a stream of snapshots (commits)
 
 1. Install Git in your local development environment (laptop/desktop)
 
-1. Scenario 1: Repository already exists and your local environment is empty - Clone 
+1. Create Repository in GitHub. Either under your organizations or your personal account. Click on the "New" button
+![alt text](images/NewRepository.JPG "New Repo")
 
-    - **Terminal** - 
-    - **GitHub** - 
+1. Add a descriptive lowercase-with-hyphens name, do not initialize a README this time.
+
+1. **Scenario 1** - Repository already exists in GitHub and you have code already in your local
+
+    - **Terminal** -  Replace <<repository-url>> with your GitHub repo URL. i.e. https://github.com/cortlandpartners/hello-world
     
-1. Create a Repository (If it does not exist)
+    ```bash
+    $cd <<project-folder>>
+    # creates the "develop" branch
+    $git checkout -b develop
+    # initializes .git repo in our local environment
+    $git init
+    # creates a remote called "origin" linked to "GitHub repo's URL"
+    $git remote add origin <<repository-url>>
+    # downloads commits, files and refs from remote repository into our local
+    $git fetch origin
+ 
+    ```
+ 1. **Scenario 2** - Repository already exists and your local environment is empty (Recommended)
 
-    - **Terminal** - 
-    - **GitHub** - 
+    
+
+    
 
