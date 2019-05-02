@@ -8,6 +8,7 @@ class Family:
 
 class Character(Family):
 
-    def __init__(self, family_name, sigil, name):
+    def __init__(self, family_name, sigil, name, gender):
         self.name = name
+        self.gender = gender
         super().__init__(name=family_name, sigil=sigil)

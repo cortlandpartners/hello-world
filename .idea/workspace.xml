@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc61c263-4c64-4ede-a6c6-a6fc3fd58fee" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hello-world/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello-world/__init__.py" afterDir="false" />
+>>>>>>> 68c6e6ffa1abcf036dc4ec2b84b0da6440fe104a
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +41,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="8" />
-          <entry key="md" value="3201" />
+          <entry key="md" value="3814" />
           <entry key="py" value="245" />
         </counts>
       </usages-collector>
@@ -45,7 +49,7 @@
         <counts>
           <entry key="Bash" value="20" />
           <entry key="Git file" value="8" />
-          <entry key="Markdown" value="3181" />
+          <entry key="Markdown" value="3794" />
           <entry key="Python" value="245" />
         </counts>
       </usages-collector>
@@ -78,7 +82,18 @@
       </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
+<<<<<<< HEAD
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="683">
+                <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+=======
           <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 68c6e6ffa1abcf036dc4ec2b84b0da6440fe104a
         </entry>
       </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
@@ -226,6 +241,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+<<<<<<< HEAD
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="683">
+            <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+          </first_editor>
+          <second_editor />
+=======
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
@@ -252,6 +275,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+>>>>>>> 68c6e6ffa1abcf036dc4ec2b84b0da6440fe104a
         </state>
       </provider>
     </entry>
