@@ -186,41 +186,57 @@ In GitHub, we can get the URL to clone with HTTPS. Copy the url.
     A branch is a separate space where we can try out our ideas/features. This way we won't affect the original branch until we are good to go (decide to **merge** it)
 1. Let's create a branch
  
-  ```bash
-  $ git checkout -b new_feature
-  ```
+      ```bash
+      $ git checkout -b new_feature
+      ```
   
-  This will create a branch where we can make any changes we need. Every time we commit our changes, they will be in this new branch.
-  We used `git checkout` to switch branches by updating the index and the files in the working tree and by pointing HEAD at the branch.
-  
-  If `-b` is given, <new_feature> is created if it doesn't exist, otherwise, it is reset.
-  
+      This will create a branch where we can make any changes we need. Every time we commit our changes, they will be in this new branch.
+      We used `git checkout` to switch branches by updating the index and the files in the working tree and by pointing HEAD at the branch.
+      
+      If `-b` is given, <new_feature> is created if it doesn't exist, otherwise, it is reset.
+      
   1. Let's switch back to `develop`
   
-   ```bash
-  $ git checkout develop
-  ```
+       ```bash
+      $ git checkout develop
+      ```
   
   1. We can also see all the branches available (both remote and local)
   
-  ```bash
-  $ git branch -a
-  ```
+      ```bash
+      $ git branch -a
+      ```
   
   1. Now, let's switch back to `new_feature` and make a change to `characters.py`
-   ```bash
-  $ git checkout new_feature
-  # make the change, i.e. add a comment to characters.py
-  $ git status
-  $ git add .
-  $ git commit -m "Added new functionality to charcaters"
-  ``` 
+       ```bash
+      $ git checkout new_feature
+      # make the change, i.e. add a comment to characters.py
+      $ git status
+      $ git add .
+      $ git commit -m "Added new functionality to charcaters"
+        ``` 
  1. Let's merge these changes back to `develop`
-   ```bash
-  $ git checkout develop
-  $ git merge new_feature
+       ```bash
+      $ git checkout develop
+      $ git merge new_feature
+      ``` 
   
-  ``` 
+    It will take all of the changes made to the `new_feature` branch and add them to `develop`
  
+  1. To share your `new_feature` and publish it to GitHub we can do the following:
   
-  
+       ```bash
+      $ git checkout new_feature
+      $ git push --set-upstream origin new_feature
+      $ git status
+      ``` 
+      What is an **upstream**?
+      An upstream is simply another branch name, usually a remote-tracking branch, associated with a local branch.
+      
+      there are other ways to do this, however doing it this way guarantees that your `git push` in your local branch works as expected
+      
+      Other ways
+      ```bash
+      $ git checkout new_feature
+      $ git push origin new_feature
+      ``` 
