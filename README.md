@@ -56,10 +56,10 @@ Git is a stream of snapshots (commits)
       
         ```bash
         $ cd <<project-folder>>
-        # creates the "develop" branch
-        $ git checkout -b develop
         # initializes .git repo in our local environment
         $ git init
+        # creates the "develop" branch
+        $ git checkout -b develop
         # creates a remote called "origin" linked to "GitHub repo's URL"
         $ git remote add origin <<repository-url>>
         # downloads commits, files and refs from remote repository into our local
@@ -68,6 +68,7 @@ Git is a stream of snapshots (commits)
         $ git status
         # add your all your new and modified (".") changes to the staging area
         $ git add .
+        $ git commit -m "some descriptive comment"
         # push local changes to the remote specified branch
         $ git push origin develop
         ```
