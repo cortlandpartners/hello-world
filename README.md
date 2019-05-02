@@ -214,7 +214,13 @@ In GitHub, we can get the URL to clone with HTTPS. Copy the url.
   $ git status
   $ git add .
   $ git commit -m "Added new functionality to charcaters"
+  ``` 
+ 1. Let's merge these changes back to `develop`
+   ```bash
+  $ git checkout develop
+  $ git merge new_feature
   
   ``` 
+ 
   
   
