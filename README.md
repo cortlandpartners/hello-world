@@ -127,11 +127,19 @@ Git is a stream of snapshots (commits)
 
 1. Then, commit these changes with a commit message and push them through
 
-    `$ git add hello-world/characters.py`
+    `$ git commit -m "Added gender attribute to Characters"`
+ 
+1. Perfect! We can now initialize a repository, stage files, commit files and changes, and finally push them to our current branch
 
+1. Including a README file is also a best practice. In this particular example we decided to not initialize a README however we can add it manually.
+
+    ![alt-text](https://images.unsplash.com/photo-1521714161819-15534968fc5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80)
     
-  
-    
+    [Photo by Raj Eiamworakul on Unsplash](https://unsplash.com/@roadtripwithraj?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge)
+
+1. Let's assume that this repository already exists and some other team has been working on it. We need to **clone a repository** into our computer.
+In GitHub, we can get the URL to clone with HTTPS.
+ 
 
     
 
