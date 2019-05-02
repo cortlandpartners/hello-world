@@ -72,7 +72,12 @@ Git is a stream of snapshots (commits)
         $cd <<project-parent-folder>>
         $git clone https://github.com/cortlandpartners/<<repository-name>>.git
         ```
- 1. So far we have used the big git commands, don't forget to also use `git help`. It is seriously very helpful if you're starting out.
+ 1. So far we have used the most common git commands, don't forget to also use `git help`. It is seriously very helpful if you're starting out.
+ 
+ 1. Now, it is important to understand the following components:
+    - Working directory (files) - write changes in our computer's files and represents a particular commit (snapshot)
+    - index (staging area) - getting prepared to be packaged into a commit object
+    - head (last commit) - point to your last commit on a branch in your Git repo
   
     
 
