@@ -138,8 +138,54 @@ Git is a stream of snapshots (commits)
     [Photo by Raj Eiamworakul on Unsplash](https://unsplash.com/@roadtripwithraj?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge)
 
 1. Let's assume that this repository already exists and some other team has been working on it. We need to **clone a repository** into our computer.
-In GitHub, we can get the URL to clone with HTTPS.
+In GitHub, we can get the URL to clone with HTTPS. Copy the url.
  
+    ![alt-text](images/clone-HTTPS.PNG "Clone")
+ 
+1. In your terminal, get to the parent folder directory of your project. Assuming that you have defined your HOME environment variable (i.e. C:\Users\Saul.Cruz\)
 
+    Then clone the repository
+
+    ```bash
+    $ cd documents/github-2
+    $ git clone <the-url-that-you-just-copied>
+    ```
+     
+1. What if you want to play with an existing project on your own? we can **fork a repository**. This makes a copy of the repo in our personal repositories without affecting the original.
+
+    ![alt-text](images/fork.PNG "Fork repo")
     
+   This guide will not focus on forking and contributing guidelines, however we have to remember to keep our fork synced by adding an "upstream" remote
+   
+1. Let's make another change. Let's create an empty `config.yml` file in the source code project directory.
 
+    ```bash
+    $ cd ..
+    $ cd github/hello-world/hello-world
+    $ echo "" > config.yml
+    $ cd ..
+    $ git status
+    $ git add .
+    $ git commit -m "Created config file"
+    ```
+1. Notice that we're committing the changes to the HEAD, but not to the remote repository yet. We just took a snapshot of our repository and included a message with `-m`
+    
+    To send this change to our remote repository, we have to push
+    
+      ```bash
+      $ git push origin develop
+      ```
+ **Learning to collaborate and contribute**
+ 
+1. Now we're ready to test our ideas and features in mind. Some features might be good to go but some might not. However, what if we're working with other people with other ideas, tasks, features. This is where **branching** gets into the game.
+    
+    ![alt-text](https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80)
+    
+    [Photo by Yancy Min on Unsplash](https://unsplash.com/@yancymin?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge)
+
+    A branch is a separate space where we can try out our ideas/features. This way we won't affect the original branch until we are good to go (decide to **merge** it)
+1. Let's create a branch
+ 
+  ```bash
+  $ git checkout -b new_feature
+  ```
