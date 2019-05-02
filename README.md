@@ -189,3 +189,32 @@ In GitHub, we can get the URL to clone with HTTPS. Copy the url.
   ```bash
   $ git checkout -b new_feature
   ```
+  
+  This will create a branch where we can make any changes we need. Every time we commit our changes, they will be in this new branch.
+  We used `git checkout` to switch branches by updating the index and the files in the working tree and by pointing HEAD at the branch.
+  
+  If `-b` is given, <new_feature> is created if it doesn't exist, otherwise, it is reset.
+  
+  1. Let's switch back to `develop`
+  
+   ```bash
+  $ git checkout develop
+  ```
+  
+  1. We can also see all the branches available (both remote and local)
+  
+  ```bash
+  $ git branch -a
+  ```
+  
+  1. Now, let's switch back to `new_feature` and make a change to `characters.py`
+   ```bash
+  $ git checkout new_feature
+  # make the change, i.e. add a comment to characters.py
+  $ git status
+  $ git add .
+  $ git commit -m "Added new functionality to charcaters"
+  
+  ``` 
+  
+  
