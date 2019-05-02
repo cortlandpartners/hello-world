@@ -240,3 +240,8 @@ In GitHub, we can get the URL to clone with HTTPS. Copy the url.
       $ git checkout new_feature
       $ git push origin new_feature
       ``` 
+ 1. After making these changes we can safely delete the branch
+ 
+       ```bash
+      $ git branch -d new_feature
+      ``` 
