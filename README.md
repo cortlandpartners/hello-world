@@ -44,40 +44,61 @@ Git is a stream of snapshots (commits)
     $git config --global user.name "<your_user_name_here>"
     $git config --global user.email "<your@email.com>"
     ```
+1. Now, it is important to understand the following components:
+    - Working directory (files) - write changes in our computer's files and represents a particular commit (snapshot)
+    - index (staging area) - getting prepared to be packaged into a commit object
+    - head (last commit) - point to your last commit on a checked out branch
+    
 1. Getting started (Clone or fetch)
     1. **Initialize and fetch** - Repository already exists in GitHub and you have code already in your local. 
     
         Note: Replace <<repository-url>> with your GitHub repo URL. i.e. https://github.com/cortlandpartners/hello-world
       
         ```bash
-        $cd <<project-folder>>
+        $ cd <<project-folder>>
         # creates the "develop" branch
-        $git checkout -b develop
+        $ git checkout -b develop
         # initializes .git repo in our local environment
-        $git init
+        $ git init
         # creates a remote called "origin" linked to "GitHub repo's URL"
-        $git remote add origin <<repository-url>>
+        $ git remote add origin <<repository-url>>
         # downloads commits, files and refs from remote repository into our local
-        $git fetch origin
+        $ git fetch origin
         # check the status of my local working tree repo
-        $git status
+        $ git status
         # add your all your new and modified (".") changes to the staging area
-        $git add .
+        $ git add .
         # push local changes to the remote specified branch
-        $git push origin develop
+        $ git push origin develop
         ```
         
      1. **Clone repository** - Repository already exists and your local environment is empty (Via HTTPS)
         ```bash
-        $cd <<project-parent-folder>>
-        $git clone https://github.com/cortlandpartners/<<repository-name>>.git
+        $ cd <<project-parent-folder>>
+        $ git clone https://github.com/cortlandpartners/<<repository-name>>.git
         ```
- 1. So far we have used the most common git commands, don't forget to also use `git help`. It is seriously very helpful if you're starting out.
+1. So far we have used the most common git commands, don't forget to also use `$ git help`. It is seriously very helpful if you're starting out.
  
- 1. Now, it is important to understand the following components:
-    - Working directory (files) - write changes in our computer's files and represents a particular commit (snapshot)
-    - index (staging area) - getting prepared to be packaged into a commit object
-    - head (last commit) - point to your last commit on a branch in your Git repo
+1. At this point we should have a new hidden directory called `.git` in our local project directory. This is where all the magic gets stored so that it can track everything.
+ 
+1. We can either stage a single file with `$ git add <filename>` or all of the new and modified files `$ git add .`
+ 
+1. to commit these changes
+
+```bash
+$ git commit -m "<add a descriptive commit message here>"
+```
+
+1. if we're good to go, then we can run
+
+```bash
+# this by default pushes our work to the "origin" remote work
+$ git push
+```
+
+
+
+    
   
     
 
