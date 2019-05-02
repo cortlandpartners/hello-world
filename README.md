@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# hello-world
-Just a basic repository to learn Git
-=======
 # Getting started with Git and GitHub
 
 ### What is Git?
@@ -264,4 +260,4 @@ In GitHub, we can get the URL to clone with HTTPS. Copy the url.
  1. See one person's commit `git log --author=<name>`
  
  1. See what has been changed but not staged yet `git diff`
->>>>>>> develop
+
