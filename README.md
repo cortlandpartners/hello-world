@@ -85,18 +85,49 @@ Git is a stream of snapshots (commits)
  
 1. to commit these changes
 
-```bash
-$ git commit -m "<add a descriptive commit message here>"
-```
+    ```bash
+    $ git commit -m "<add a descriptive commit message here>"
+    ```
 
 1. if we're good to go, then we can run
 
-```bash
-# this by default pushes our work to the "origin" remote work
-$ git push
-```
+    ```bash
+    # this by default pushes our work to the "origin" remote work
+    $ git push
+    ```
+1. Let's make a simple change to our sample source code in our local project. Let's open `characters.py` and add a new attribute
 
+    ```python
+    class Family:
+        def __init__(self, name, sigil):
+            self.name = name
+            self.sigil = sigil
+    
+        def get_aggressive(self):
+            pass
+    
+    class Character(Family):
+    
+        def __init__(self, family_name, sigil, name, gender):
+            self.name = name
+            self.gender = gender
+            super().__init__(name=family_name, sigil=sigil)
+    ```
+1. At any time we can check whether or not we have changes to push
 
+    `$ git status`
+    
+    ![alt text](images/git-status.gif "git status")
+    
+1. If we made changes like this time, we can add our files on at a time
+
+    `$ git add hello-world/characters.py`
+
+1. or  `$ git add .` which adds all files, folders and subfolders recursively
+
+1. Then, commit these changes with a commit message and push them through
+
+    `$ git add hello-world/characters.py`
 
     
   
