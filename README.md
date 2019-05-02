@@ -245,3 +245,18 @@ In GitHub, we can get the URL to clone with HTTPS. Copy the url.
        ```bash
       $ git branch -d new_feature
       ``` 
+      This only deletes the branch locally. Depending on your branching strategy, in some cases it is considered a good practice persisting branches in GitHub (remote)
+      
+ 1. Given that `new_feature` is not a release branch and will not be needed in remote, we have to also delete from there
+ 
+       ```bash
+       $ git push origin --delete new_feature
+      ``` 
+ 
+ **Other useful commands**
+ 
+ 1. See the commit history of the repository `git log`
+ 
+ 1. See one person's commit `git log --author=<name>`
+ 
+ 1. See what has been changed but not staged yet `git diff`
