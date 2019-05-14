@@ -12,3 +12,4 @@ class Character(Family):
         self.name = name
         self.gender = gender
         super().__init__(name=family_name, sigil=sigil)
+        print("Made a change in the code")
